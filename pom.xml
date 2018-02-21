@@ -19,6 +19,7 @@
 		<module>springboot-demo03</module>
 		<module>springboot-demo04</module>
 		<module>springboot-demo05</module>
+		<module>springboot-demo06</module>
     </modules>
 	
 	<build>

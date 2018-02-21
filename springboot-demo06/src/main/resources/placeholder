@@ -1,0 +1,8 @@
+解析属性文件的占位符需要这样配置，
+
+<context:property-placeholder/>
+或
+<context:property-placeholder location="com/soundsystem/app.properties" />
+
+然后这样使用
+<bean class="com.soundsystem.BlankDisc" c:_0 = "${disc.title}" c:_1 = "${disc.artist}"/>
