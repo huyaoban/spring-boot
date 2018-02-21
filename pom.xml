@@ -15,6 +15,7 @@
 	
 	<modules>
         <module>springboot-demo01</module>
+		<module>springboot-demo02</module>
     </modules>
 	
 	<build>

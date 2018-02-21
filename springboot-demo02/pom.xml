@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+	
+    <parent>
+		<groupId>com.huyaoban.springboot</groupId>
+        <artifactId>springboot-demo</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>springboot-demo02</artifactId>
+    <name>springboot-demo02</name>
+    <description>
+    	通过Java代码装配Bean。尽管在很多场景下通过组件扫描和自动装配实现Spring
+    	的自动化配置是更为推荐的方式，但有时候自动化配置时行不通的，因此需要明确
+    	配置Spring。比如将第三方库中的组件装配到应用中，在这种情况下，是没有办法
+    	在它的类上添加Component和Autowired注解的。这种情况下，只能显示配置Spring，
+    	显示配置Spring有两种方案可选：Java代码配置和XML配置。这里运用的是Java代码配置。
+    	组件扫描和显示配置可同时使用。
+    </description>
+    <packaging>jar</packaging>
+	
+	<properties>
+    	<spring.version>4.2.5.RELEASE</spring.version>
+    </properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        
+        <!-- 引入jstl -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+	</dependencies>
+</project>
